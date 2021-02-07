@@ -2,21 +2,21 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 interface IClockProps {
-    title: number[]
+    times: string[]
 }
 
 export class Clock extends Component {
 
     static propTypes = {
-        title: PropTypes.array.isRequired
+        times: PropTypes.array.isRequired
     }
 
     render() {
-        const {title} = this.props as IClockProps
+        const {times} = this.props as IClockProps
         return (
             <div>
                 {
-                    title.map(x => {
+                    times.map(x => {
                         return (
                         <div>
                             {x}
