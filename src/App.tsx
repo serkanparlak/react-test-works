@@ -5,6 +5,8 @@ import Header from './components-functional/Header';
 import Counter from './components-functional/Counter';
 import Clock from './components-class/Clock';
 import Numbers from './components-class/Numbers';
+import Alt from './components-functional/Alt';
+import Ust from './components-functional/Ust';
 
 function App() {
   const nmbrs = [
@@ -30,6 +32,9 @@ function App() {
         <Clock times={['10:32','22:00']}/>
         <br/> 
         <Numbers numbers={numbers} removeNumber={removeNumber} />
+        <Ust
+          alt={<Alt key="514" asd="asds"></Alt>}
+        ></Ust>
       </div>
     </div>
   );

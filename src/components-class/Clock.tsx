@@ -14,7 +14,7 @@ export class Clock extends Component {
     render() {
         const {times} = this.props as IClockProps
         return (
-            <div>
+            <div className="bg-white" style={{ backgroundColor: 'blue', color: 'brown' }}>
                 {
                     times.map(x => {
                         return (
