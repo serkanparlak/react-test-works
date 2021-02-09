@@ -2,14 +2,14 @@ import { render } from "@testing-library/react";
 import React from 'react';
 
 interface IAltProps {
-    asd: string;
+    link: string;
 }
 
-function Alt({asd}: IAltProps) {
+const Alt: React.FunctionComponent<IAltProps> = (props) => {
     return (
         <React.Fragment>
             <div>Alt</div>
-            <a href="asdasd">{asd}</a>
+            <a href="asdasd">{props.link}</a>
         </React.Fragment>
     );
 }

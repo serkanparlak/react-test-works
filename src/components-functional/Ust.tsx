@@ -4,12 +4,12 @@ interface IUstProps {
     alt: JSX.Element,
 }
 
-function Ust({ alt }: IUstProps) {
+const Ust: React.FunctionComponent<IUstProps> = (props) => {
     return (
         <div>
             <h4>Ust</h4>
             {/* {alt.props.map((x: any) => <div>{x}</div>)} */}
-            { alt }
+            { props.alt }
         </div>
     )
 }
