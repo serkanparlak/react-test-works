@@ -25,16 +25,16 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        <Header title={"Başlık"}></Header>
+        {/* <Header title={"Başlık"}></Header> */}
         <img src={logo} className="App-logo" alt="logo" />
-        <Counter start={5} increment={5} />
+        {/* <Counter start={5} increment={5} />
         <br />
         <Clock times={['10:32', '22:00']} />
         <br />
         <Numbers numbers={numbers} removeNumber={removeNumber} />
         <Ust
           alt={<Alt key="514" link="asds"></Alt>}
-        ></Ust>
+        ></Ust> */}
       </div>
     </div>
   );
