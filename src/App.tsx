@@ -7,6 +7,9 @@ import Clock from './components-class/Clock';
 import Numbers from './components-class/Numbers';
 import Alt from './components-functional/Alt';
 import Ust from './components-functional/Ust';
+import { UserProvider } from './contexts/UserContext';
+import User from './components-class/User';
+import UserWrapper from './components-class/UserWrapper';
 
 function App() {
   const nmbrs = [
@@ -35,6 +38,9 @@ function App() {
         <Ust
           alt={<Alt key="514" link="asds"></Alt>}
         ></Ust> */}
+        <UserProvider>
+          <UserWrapper />
+        </UserProvider>
       </div>
     </div>
   );
